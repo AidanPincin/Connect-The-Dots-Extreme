@@ -215,7 +215,7 @@ if (lvl == null){
 }
 const lvls = [[new Dot(350,100), new Dot(100,550), new Dot(600,550)], // 0
 [new Dot(100,100), new Dot(400,100), new Dot(400,400), new Dot(100,400)], // 1
-[new Dot(350,100), new Dot(500,500), new Dot(125,225), new Dot(575,225), new Dot(200,500)], // 2
+[new Dot(350,100), new Dot(500,500), new Dot(125,225), new Dot(575,225), new Dot(200,500)] // 2
 ]
 const puzzle = new Puzzle()
 function down(e){
