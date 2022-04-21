@@ -25,14 +25,10 @@ new Button(987.5,650,'Submit puzzle!',function(){
         let dotText = 'dots = ['+'new Dot('+st[0]+','+st[1]+',2),'
         st = dotConnecter.connectedDots[0][1]
         dotText += 'new Dot('+st[0]+','+st[1]+',2),'
-        console.log(st)
         for (let i=0; i<dotConnecter.connectedDots.length-1; i++){
             let dot = dotConnecter.connectedDots.find(d => d[0][0] == st[0] && d[0][1] == st[1])
-            console.log(dot)
-            if (dot != undefined){
-                dotText += 'new Dot('+dot[0][0]+','+dot[0][1]+',2),'
-                st = dot[1]
-            }   
+            dotText += 'new Dot('+dot[0][0]+','+dot[0][1]+',2),'
+            st = dot[1]
         }
         dotText = dotText.slice(0,dotText.length-1)
         dotText += ']'
